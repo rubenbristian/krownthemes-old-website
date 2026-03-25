@@ -1,0 +1,849 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <title>Kingdom - Shopify Theme</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <script type="text/javascript">
+    var generalDelay = 200;
+    if ( sessionStorage.fauxBlue && ! ('ontouchstart' in window || window.DocumentTouch && document instanceof DocumentTouch) ) {
+      document.querySelector('html').classList.add('faux-blue');
+      delete sessionStorage.fauxBlue;
+    }
+  </script>
+
+  <link rel="icon" type="image/png" href="assets/images/krownthemes.png" />
+
+  <link rel="preload" crossorigin="anonymous" href="assets/fonts/DidactGothic-Regular.woff2" as="font" type="font/woff2">
+  <link rel="preload" crossorigin="anonymous" href="assets/fonts/Roboto-Bold.woff2" as="font" type="font/woff2">
+  <link rel="preload" crossorigin="anonymous" href="assets/fonts/Roboto-Medium.woff2" as="font" type="font/woff2">
+  <link rel="preload" crossorigin="anonymous" href="assets/fonts/Roboto-Regular.woff2" as="font" type="font/woff2">
+  <link rel="preload" crossorigin="anonymous" href="assets/fonts/Roboto-Thin.woff2" as="font" type="font/woff2">
+  <link rel="preload" crossorigin="anonymous" href="assets/fonts/RobotoMono-Bold.woff2" as="font" type="font/woff2">
+  <link rel="preload" crossorigin="anonymous" href="assets/fonts/RobotoMono-Italic.woff" as="font" type="font/woff">
+  <link rel="preload" crossorigin="anonymous" href="assets/fonts/RobotoMono-Regular.woff2" as="font" type="font/woff2">
+
+  <style type="text/css">
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 100;
+      font-display: swap;
+      src: url(assets/fonts/Roboto-Thin.woff2) format('woff2');
+    }
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(assets/fonts/Roboto-Regular.woff2) format('woff2');
+    }
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(assets/fonts/Roboto-Medium.woff2) format('woff2');
+    }
+    @font-face {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(assets/fonts/Roboto-Bold.woff2) format('woff2');
+    }
+
+    @font-face {
+      font-family: 'Roboto Mono';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(assets/fonts/RobotoMono-Regular.woff2) format('woff2');
+    }
+    @font-face {
+      font-family: 'Roboto Mono';
+      font-style: italic;
+      font-weight: 400;
+      font-display: swap;
+      src: url(assets/fonts/RobotoMono-Italic.woff) format('woff');
+    }
+    @font-face {
+      font-family: 'Roboto Mono';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(assets/fonts/RobotoMono-Bold.woff2) format('woff2');
+    }
+
+    @font-face {
+      font-family: 'Didact Gothic';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(assets/fonts/DidactGothic-Regular.woff2) format('woff2');
+    }
+  </style>
+
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  
+
+</head>
+
+<body class="page-template page-kingdom no-touch">
+
+  <header class="header">
+    <div class="logo" aria-label="Krown Themes">
+      <a href="index.html">
+        <svg width="41" height="31" viewBox="0 0 41 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="logo-path" d="M13 16L21 8L28 15L39.5 4V29.5H1.5V4.5L2 5" stroke="black" stroke-width="3" stroke-linecap="square"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="menu-opener initial-transition">
+      <span class="menu-opener__icon"></span>
+    </div>
+
+    <div class="menu-holder">
+      <nav class="menu">
+        
+        <span class="menu__title type-mono">SHOPIFY THEMES</span>
+
+        <ul>
+          <li class="font-size-largerst"><a href="highlight.html" title="Shopify Highlight Theme"><span>Highlight</span></a></li>
+          <li class="font-size-largerst"><a href="split.html" title="Shopify Split Theme"><span>Split</span></a></li>
+          <li class="font-size-largerst"><a href="kingdom.html" title="Shopify Kingdom Theme"><span>Kingdom</span></a></li>
+        </ul>
+
+        <ul>
+  <li><a href="theme-showcase.html"><span>Theme Showcase</span></a></li>
+  <li><a href="https://shopify-support.krownthemes.com/" target="_blank"><span>Themes Documentation</span></a></li>
+  <li><a href="shopify-support-contact.html"><span>Customer Support</span></a></li>
+</ul>
+<ul>
+  <li><a href="about-us.html"><span>About us</span></a></li>
+  <li><a href="blog.html"><span>Blog</span></a></li>
+  <li><a href="contact.html"><span>Contact</span></a></li>
+</ul>
+<ul class="social-links">
+  <li><a href="https://twitter.com/krownthemes" target="_blank"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.625 5.49996L18.5625 5.84371L19.9375 4.12496L17.5312 4.81246C14.4375 1.37496 9.625 5.15621 11 8.24996C5.5 8.24996 2.75 4.12496 2.75 4.12496C2.75 4.12496 0.6875 7.21871 4.125 9.62496L2.0625 8.93746C2.0625 11 3.4375 12.375 5.84375 13.0625H3.4375C4.8125 15.8125 7.21875 15.8125 7.21875 15.8125C7.21875 15.8125 5.15625 17.5312 1.375 17.5312C12.7188 23.0312 19.5938 12.7187 18.5625 7.21871L20.625 5.49996Z" fill="#161616"/></svg><span>Twitter</span></a></li>
+  <li><a href="https://www.facebook.com/krownthemes" target="_blank"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.03451 2.09961H17.976C18.4905 2.09961 18.9 2.50911 18.9 3.02361V17.9756C18.9 18.4796 18.4905 18.8996 17.976 18.8996H13.692V12.3896H15.876L16.2015 9.85911H13.692V8.24211C13.692 7.50711 13.902 7.00311 14.952 7.00311H16.296V4.73511C16.065 4.70361 15.267 4.64061 14.343 4.64061C12.4005 4.64061 11.0775 5.81661 11.0775 7.99011V9.85911H8.88301V12.3896H11.0775V18.8996H3.03451C2.78847 18.8996 2.55235 18.8026 2.3774 18.6296C2.20245 18.4566 2.10277 18.2216 2.10001 17.9756V3.02361C2.10001 2.50911 2.52001 2.09961 3.03451 2.09961Z" fill="#161616"/></svg><span>Facebook</span></a></li>
+</ul>
+
+      </nav>
+    </div>
+  </header>
+
+  
+
+
+
+	
+	<main class="main theme-page scroll-container">
+
+		<div class="scroll-inner">
+
+
+
+			<div id="theme-hero" class="section"><section class="theme-hero">
+							
+							<div class="theme-hero__image-main hero-animate-in">
+								<div class="parallax" data-parallax="-.2" data-parallax_parent="#theme-hero" data-parallax_offset="top top">
+									<div class="theme-hero__image-holder" data-theme="king">
+										<figure class="lazy-load lap--hide" style="padding-top: 141.95%">
+											<img class="lazyload" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+												data-sizes="auto"
+												data-srcset="
+													assets/images/kingdom/king_homepage_1920.jpg 1720w,
+													assets/images/kingdom/king_homepage_1560.jpg 1360w,
+													assets/images/kingdom/king_homepage_1024.jpg 924w,
+													assets/images/kingdom/king_homepage_716.jpg 516w,
+													assets/images/kingdom/king_homepage_480.jpg 380w" 
+												src="assets/images/kingdom/king_homepage_480.jpg" 
+												alt="Kingdom Theme - king style" 
+											/>
+										</figure>
+										<figure class="lazy-load hide lap--show-block" style="padding-top: 177%">
+											<img class="lazyload" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+												data-sizes="auto"
+												data-srcset="
+													assets/images/kingdom/kingdom_king_480.jpg 420w,
+													assets/images/kingdom/kingdom_king.jpg 720w"
+												src="assets/images/kingdom/kingdom_king_480.jpg" 
+												alt="Kingdom Theme Mobile - king style" 
+											/>
+										</figure>
+									</div>
+									<div class="theme-hero__image-holder" data-theme="queen">
+										<figure class="lazy-load lap--hide" style="padding-top: 141.95%">
+											<img class="lazyload" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+												data-sizes="auto"
+												data-srcset="
+													assets/images/kingdom/queen_homepage_1920.jpg 1720w,
+													assets/images/kingdom/queen_homepage_1560.jpg 1360w,
+													assets/images/kingdom/queen_homepage_1024.jpg 924w,
+													assets/images/kingdom/queen_homepage_716.jpg 516w,
+													assets/images/kingdom/queen_homepage_480.jpg 380w" 
+												src="assets/images/kingdom/queen_homepage_480.jpg" 
+												alt="Kingdom Theme - queen style" 
+											/>
+										</figure>
+										<figure class="lazy-load hide lap--show-block" style="padding-top: 177%">
+											<img class="lazyload" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+												data-sizes="auto"
+												data-srcset="
+													assets/images/kingdom/kingdom_queen_480.jpg 420w,
+													assets/images/kingdom/kingdom_queen.jpg 720w"
+												src="assets/images/kingdom/kingdom_queen_480.jpg" 
+												alt="Kingdom Theme Mobile - queen style" 
+											/>
+										</figure>
+									</div>
+									<div class="theme-hero__image-holder" data-theme="prince">
+										<figure class="lazy-load lap--hide" style="padding-top: 141.95%">
+											<img class="lazyload" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+												data-sizes="auto"
+												data-srcset="
+													assets/images/kingdom/prince_homepage_1920.jpg 1720w,
+													assets/images/kingdom/prince_homepage_1560.jpg 1360w,
+													assets/images/kingdom/prince_homepage_1024.jpg 924w,
+													assets/images/kingdom/prince_homepage_716.jpg 516w,
+													assets/images/kingdom/prince_homepage_480.jpg 380w" 
+												src="assets/images/kingdom/prince_homepage_480.jpg" 
+												alt="Kingdom Theme - prince style" 
+											/>
+										</figure>
+										<figure class="lazy-load hide lap--show-block" style="padding-top: 177%">
+											<img class="lazyload" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+												data-sizes="auto"
+												data-srcset="
+													assets/images/kingdom/kingdom_prince_480.jpg 420w,
+													assets/images/kingdom/kingdom_prince.jpg 720w"
+												src="assets/images/kingdom/kingdom_prince_480.jpg" 
+												alt="Kingdom Theme Mobile - prince style" 
+											/>
+										</figure>
+									</div>
+								</div>
+							</div>
+						
+							<div class="theme-hero__heading">
+						
+								<span class="theme-hero__shopify hero-animate-in"><svg width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.4235 3.4975L16.2625 4.33401C16.2625 4.33401 18.0975 4.471 18.184 4.478C18.2356 4.48242 18.2843 4.50404 18.3222 4.5394C18.3601 4.57475 18.385 4.6218 18.393 4.673C18.4095 4.794 21 22.396 21 22.396L14.6435 23.7775L15.4235 3.4975ZM14.4485 2.83051C14.4079 2.83574 14.3678 2.84409 14.3285 2.8555L13.6145 3.07651C13.1885 1.84501 12.437 0.713501 11.1155 0.713501C11.079 0.713501 11.0405 0.714511 11.0035 0.71701C10.627 0.21751 10.1615 0 9.7595 0C6.6795 0 5.2075 3.87 4.7465 5.836C3.5495 6.2085 2.6995 6.47301 2.5915 6.50751C1.9225 6.71851 1.9015 6.73951 1.814 7.37201C1.748 7.85101 0 21.4355 0 21.4355L13.62 24L13.6345 23.997L14.4485 2.83051ZM10.9025 3.78601L10.902 3.9205L8.521 4.66101C8.9795 2.88401 9.8385 2.02499 10.59 1.70099C10.7785 2.17799 10.9025 2.86251 10.9025 3.78601ZM9.674 0.829987C9.808 0.829987 9.9415 0.876008 10.07 0.964508C9.0825 1.43101 8.025 2.607 7.578 4.9545L5.6965 5.5405C6.2195 3.7495 7.462 0.830505 9.674 0.830505V0.829987ZM10.205 11.2965C10.205 11.2965 9.408 10.869 8.431 10.869C6.998 10.869 6.926 11.7725 6.926 12C6.926 13.243 10.148 13.719 10.148 16.629C10.148 18.918 8.703 20.3925 6.7545 20.3925C4.4165 20.3925 3.221 18.93 3.221 18.93L3.847 16.8515C3.847 16.8515 5.0765 17.912 6.1135 17.912C6.7905 17.912 7.0665 17.376 7.0665 16.9845C7.0665 15.3635 4.4225 15.291 4.4225 12.6275C4.4225 10.387 6.0235 8.2175 9.255 8.2175C10.5 8.2175 11.115 8.57651 11.115 8.57651L10.205 11.2965ZM11.7095 3.66901L11.71 3.41901C11.71 2.65401 11.604 2.038 11.435 1.5495C12.116 1.635 12.57 2.41449 12.8615 3.31049L11.7095 3.66901Z" fill="black"/></svg> <span>Shopify Theme</span></span>
+								<h1 class="theme-hero__title"><span class="hero-animate-in">Kingdom</span><span class="theme-hero__price hero-animate-in">$250</span></h1>
+								<h2 class="theme-hero__subtitle hero-animate-in">An image-focused theme, designed around a stylish signature sidebar</h2>
+						
+								<div class="theme-hero__styles">
+									<span class="type-mono hero-animate-in">3 styles</span>
+									<ul>
+										<li class="theme-hero__style" data-theme="king">
+											<span class="hero-animate-in">
+												<span class="theme-hero__style-arrow"><svg width="64" height="16" viewBox="0 0 64 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="47" y="9" width="44" height="1.99999" transform="rotate(-180 47 9)" fill="#111111"/><path d="M7.27277 16L3.79535e-05 8L1.36367 6.5L8.6364 14.5L7.27277 16Z" fill="#111111"/><path d="M8.63641 1.5L1.36368 9.5L4.77425e-05 8.00006L7.27278 -2.2155e-07L8.63641 1.5Z" fill="#111111"/></svg></span>
+												<span class="theme-hero__style-name">king</span>
+											</span>
+										</li>
+										<li class="theme-hero__style" data-theme="queen">
+											<span class="hero-animate-in">
+												<span class="theme-hero__style-arrow"><svg width="64" height="16" viewBox="0 0 64 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="47" y="9" width="44" height="1.99999" transform="rotate(-180 47 9)" fill="#111111"/><path d="M7.27277 16L3.79535e-05 8L1.36367 6.5L8.6364 14.5L7.27277 16Z" fill="#111111"/><path d="M8.63641 1.5L1.36368 9.5L4.77425e-05 8.00006L7.27278 -2.2155e-07L8.63641 1.5Z" fill="#111111"/></svg></span>
+												<span class="theme-hero__style-name">queen</span>
+											</span>
+										</li>
+										<li class="theme-hero__style" data-theme="prince">
+											<span class="hero-animate-in">
+												<span class="theme-hero__style-arrow"><svg width="64" height="16" viewBox="0 0 64 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="47" y="9" width="44" height="1.99999" transform="rotate(-180 47 9)" fill="#111111"/><path d="M7.27277 16L3.79535e-05 8L1.36367 6.5L8.6364 14.5L7.27277 16Z" fill="#111111"/><path d="M8.63641 1.5L1.36368 9.5L4.77425e-05 8.00006L7.27278 -2.2155e-07L8.63641 1.5Z" fill="#111111"/></svg></span>
+												<span class="theme-hero__style-name">prince</span>
+											</span>
+										</li>
+									</ul>
+								</div>
+						
+								<div class="theme-hero__image-secondary hero-animate-in">
+									<div class="parallax" data-parallax=".2" data-parallax_parent="#theme-hero" data-parallax_offset="top top">
+										<figure class="lazy-load" style="padding-top: 174%">
+											<img class="lazyload" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+												data-sizes="auto"
+												data-srcset="
+													assets/images/kingdom/kingdom_mobile_1_480.jpg 380w,
+													assets/images/kingdom/kingdom_mobile_1_716.jpg 616w"			
+												src="assets/images/kingdom/kingdom_mobile_1_480.jpg" 
+												alt="Kingdom Theme Mobile Layout" 
+											/>
+										</figure>
+									</div>
+								</div>
+						
+							</div>
+						
+						
+							<div class="theme-hero__image-tertiary hero-animate-in" >
+								<div class="parallax" data-parallax="-.5" data-parallax_parent="#theme-hero" data-parallax_offset="top top">
+									<figure class="lazy-load" style="padding-top: 174%">
+										<img class="lazyload" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+											data-sizes="auto"
+											data-srcset="
+												assets/images/kingdom/kingdom_mobile_2_480.jpg 380w,
+												assets/images/kingdom/kingdom_mobile_2_716.jpg 616w"
+											src="assets/images/kingdom/kingdom_mobile_2_480.jpg" 
+											alt="Kingdom Theme Mobile Layout" 
+										/>
+									</figure>
+								</div>
+							</div>
+						
+							<div class="theme-hero__mobile-slider">
+								
+								<div class="carousel">
+									<div class="carousel-cell">
+										<figure class="lazy-load" style="padding-top: 177%">
+											<img class="lazyload" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+												data-sizes="auto"
+												data-srcset="
+													assets/images/kingdom/kingdom_king_480.jpg 420w,
+													assets/images/kingdom/kingdom_king.jpg 720w"
+												src="assets/images/kingdom/kingdom_king_480.jpg" 
+												alt="Kingdom Theme Mobile - king style" 
+											/>
+										</figure>
+									</div>
+									<div class="carousel-cell">
+										<figure class="lazy-load" style="padding-top: 177%">
+											<img class="lazyload" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+												data-sizes="auto"
+												data-srcset="
+													assets/images/kingdom/kingdom_queen_480.jpg 420w,
+													assets/images/kingdom/kingdom_queen.jpg 720w"
+												src="assets/images/kingdom/kingdom_queen_480.jpg" 
+												alt="Kingdom Theme Mobile - queen style" 
+											/>
+										</figure>
+									</div>
+									<div class="carousel-cell">
+										<figure class="lazy-load" style="padding-top: 177%">
+											<img class="lazyload" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" 
+												data-sizes="auto"
+												data-srcset="
+													assets/images/kingdom/kingdom_prince_480.jpg 420w,
+													assets/images/kingdom/kingdom_prince.jpg 720w"
+												src="assets/images/kingdom/kingdom_prince_480.jpg" 
+												alt="Kingdom Theme Mobile - prince style" 
+											/>
+										</figure>
+									</div>
+								</div>
+						
+								<div class="carousel-navigation">
+										
+											<button class="carousel-navigation__button carousel-navigation__previous">
+												<span><svg width="64" height="16" viewBox="0 0 64 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="47" y="9" width="44" height="1.99999" transform="rotate(-180 47 9)" fill="#111111"/><path d="M7.27277 16L3.79535e-05 8L1.36367 6.5L8.6364 14.5L7.27277 16Z" fill="#111111"/><path d="M8.63641 1.5L1.36368 9.5L4.77425e-05 8.00006L7.27278 -2.2155e-07L8.63641 1.5Z" fill="#111111"/></svg></span>
+											</button>
+										
+											<span class="carousel-navigation__position">
+												<span class="carousel-navigation__index">1</span> / 3
+											</span>
+										
+											<button class="carousel-navigation__button carousel-navigation__next">
+												<span><svg width="64" height="16" viewBox="0 0 64 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="17" y="7" width="44" height="1.99999" fill="#111111"/><path d="M56.7272 0L64 8L62.6363 9.5L55.3636 1.5L56.7272 0Z" fill="#111111"/><path d="M55.3636 14.5L62.6363 6.5L64 7.99994L56.7272 16L55.3636 14.5Z" fill="#111111"/></svg></span>
+											</button>
+										
+										</div>
+						
+							</div>
+						
+						</section></div>
+
+
+			<div id="theme-why" class="section"><section class="why">
+			
+				<span>Why?</span>
+				<p class="affiliate-text">The stylish sidebar, combined with the minimalist look creates a clean template best for businesses looking for large inventory shopify themes.</p>
+				<span class="type-mono">...so we've been told! <span>🤞</span></span>
+			
+			</section></div>
+
+
+
+			<div id="reviews" class="section"><div class="reviews" data-parallax="0.2">
+			
+				<div class="reviews--sales">
+					<div class="reviews__content">
+						<span class="reviews__number"><span class="reviews__sales" id="reviews-sales" data-total="6.6" data-trail="3">6.6</span>k<sup>+</sup></span>
+						<span class="reviews__info">Total sales</span>
+					</div>
+				</div>
+			
+				<div id="reviews-rating" class="reviews--rating">
+					<div class="reviews__content">
+						<span class="reviews__number"><span class="reviews__sales" id="reviews-rating" data-total="96" data-trail="2">96</span><sup>%</sup></span>
+						<span class="reviews__info"><strong>Positive reviews</strong> <br class="hide palm--show-block" /><em style="font-style: normal; margin-top: 10px;" class="palm--show-inline">(163)</em></span>
+						<span class="reviews__arrow"><svg width="64" height="16" viewBox="0 0 64 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="17" y="7" width="44" height="1.99999" fill="#111111"/><path d="M56.7272 0L64 8L62.6363 9.5L55.3636 1.5L56.7272 0Z" fill="#111111"/><path d="M55.3636 14.5L62.6363 6.5L64 7.99994L56.7272 16L55.3636 14.5Z" fill="#111111"/></svg></span>
+					</div>
+					<span class="reviews__arrow"><svg width="64" height="16" viewBox="0 0 64 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="17" y="7" width="44" height="1.99999" fill="#111111"/><path d="M56.7272 0L64 8L62.6363 9.5L55.3636 1.5L56.7272 0Z" fill="#111111"/><path d="M55.3636 14.5L62.6363 6.5L64 7.99994L56.7272 16L55.3636 14.5Z" fill="#111111"/></svg></span>
+				</div>
+			
+			</div></div>
+
+			<div id="features" class="section">
+			<div class="features">
+			
+				<div class="features__intro">
+					<p class="type-mono">SO WHAT MAKES <br class="hide palm--show-inline" /> THIS THEME SO SPECIAL?</p>
+					<span><svg width="64" height="16" viewBox="0 0 64 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="17" y="7" width="44" height="1.99999" fill="#111111"/><path d="M56.7272 0L64 8L62.6363 9.5L55.3636 1.5L56.7272 0Z" fill="#111111"/><path d="M55.3636 14.5L62.6363 6.5L64 7.99994L56.7272 16L55.3636 14.5Z" fill="#111111"/></svg></span>
+				</div>
+			
+				<div id="feature-responsive" class="feature">
+					<div class="grid size-14 lap--size-20 push-6 lap--push-2 palm--push-0">
+						<div class="grid__item size-6 lap--size-12 palm--size-20 parallax" data-parallax="-.15" data-parallax_parent="#feature-responsive">
+							<h3 class="animate-in hide lap--show-block">Truly Responsive Layout</h3>
+							<p class="animate-in size-4 push-2 lap--size-12 palm--size-20 lap--push-0">Optimize the shopper's experience with great performance on any mobile device.</p>
+							<div class="lap--size-10 palm--size-20">
+								<div class="video" data-poster="assets/images/kingdom/kingdom_king.jpg" style="padding-top: 184.75%">
+									<video class="lazy-video" autoplay muted playsinline loop>
+										<source data-src="assets/videos/kingdom/kingdom_mobile_presentation.mp4" type="video/mp4" />
+									</video>
+								</div>
+							</div>
+						</div>
+						<div class="grid__item size-6 push-2 lap--push-0 palm--hide">
+							<h3 class="animate-in lap--hide">Truly Responsive Layout</h3>
+							<div class="video" data-poster="assets/images/kingdom/kingdom_queen.jpg" style="padding-top: 184.75%">
+								<video class="lazy-video" autoplay muted playsinline loop>
+									<source data-src="assets/videos/kingdom/kingdom_mobile_presentation_queen_preset.mp4" type="video/mp4" />
+								</video>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div id="feature-split_screen_slider" class="feature grid__item size-18 push-6">
+					<h3 class="grid__item size-14 palm--size-20 lap--push-2 palm--push-0 animate-in">Unique<br />Vertical Slider</h3>
+					<div class="grid">
+						<div class="grid__item size-4 lap--size-14 palm--size-20 lap--push-2 palm--push-0" style="margin-top: -5vh">
+							<p class="animate-in">The silky smooth slider has multiple customization options making it truly one of a kind for shopify themes.</p>
+							<p class="animate-in">Slider content is never missed as it works on a smooth scrolling vertical roll.</p>
+							<p class="animate-in">We've got you covered with a horizontal slider too! Choose to flow sideways instead of up and down.</p>
+						</div>
+						<div class="grid__item size-12 lap--size-20 palm--size-24 push-2 palm--pull-2"> 
+							<div class="video" data-poster="assets/images/kingdom/kingdom_slider.jpg" style="padding-top: 64.285%">
+																<video class="lazy-video" autoplay muted playsinline loop>
+																	<source data-src="assets/videos/kingdom/kingdom_slider.mp4" type="video/mp4" />
+																</video>
+															</div>
+						</div>
+					</div>
+				</div>
+				
+				<div id="feature-split_adaptive_grid" class="feature background-color-switch">
+					<div class="grid__item size-10 palm--size-20 lap--size-14 push-6 lap--push-2 palm--push-0">
+						<h3 class="animate-in">Classic Grid <br />or Emphasized?</h3>
+					</div>
+					<div class="grid" id="feature-kingdom_grid">
+						<div class="grid__item size-11 lap--size-24 palm--size-24 lap--pull-2 palm--pull-2">
+							<p class="size-5 lap--size-10 palm--size-16 lap--push-4 palm--push-2 hide lap--show-block animate-in" style="margin-bottom: 100px">Switch up the regular flow of grid images with large product thumbnails to stand out and feature products to increase sales.</p>
+							<div id="feature-kingdom-grid-empha" class="lap--push-4 palm--push-0" style="position: relative;">
+								<div class="parallax" data-parallax="-.3" data-parallax_parent="#feature-kingdom_grid">
+									<span class="type-mono feature-caption lap--push-7 palm--push-2 animate-in lap--hide" style="width: 100%; text-align: right;">Emphasize featured products</span>
+									<figure class="lazy-load" style="padding-top: 130.63%">
+										<img class="lazyload" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+											data-sizes="auto"
+											data-srcset="
+												assets/images/kingdom/kingdom_emphasized_grid_1320.jpg 1220w,
+												assets/images/kingdom/kingdom_emphasized_grid_1024.jpg 924w,
+												assets/images/kingdom/kingdom_emphasized_grid_716.jpg 516w,
+												assets/images/kingdom/kingdom_emphasized_grid_480.jpg 380w" 
+											src="assets/images/kingdom/kingdom_emphasized_grid_480.jpg" 
+											alt="Kingdom Emphasized Grid" 
+										/>
+									</figure>
+								</div>
+							</div>
+						</div>
+						<div class="grid__item size-11 lap--size-20 palm--size-24 push-2 lap--pull-2 palm--pull-2">
+							<p class="size-5 lap--hide animate-in" style="margin-bottom: 100px">Switch up the regular flow of grid images with large product thumbnails to stand out and feature products to increase sales.</p>
+							<div style="position: relative;">
+								<span class="type-mono feature-caption lap--push-4 palm--push-2 animate-in lap--hide">Regular grid</span>
+								<figure class="lazy-load" style="padding-top: 130.63%">
+									<img class="lazyload" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+										data-sizes="auto"
+										data-srcset="
+											assets/images/kingdom/kingdom_regular_grid_1320.jpg 1220w,
+											assets/images/kingdom/kingdom_regular_grid_1024.jpg 924w,
+											assets/images/kingdom/kingdom_regular_grid_716.jpg 516w,
+											assets/images/kingdom/kingdom_regular_grid_480.jpg 380w" 
+										src="assets/images/kingdom/kingdom_regular_grid_480.jpg" 
+										alt="Kingdom Regular Grid" 
+									/>
+								</figure>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				<div id="feature-split_navigation_menus" class="feature">
+					<h3 class="grid__item size-12 palm--size-20 push-4 lap--push-2 palm--push-0 animate-in">Signature<br />Sidebar</h3>
+					<div class="grid">
+						<div class="grid__item size-4 lap--size-14 palm--size-20 push-4 lap--push-2 palm--push-0">
+							<p class="animate-in">Dual menu sidebars make it simple for returning customers to find products and purchase from your shopify store.<br /><br />Customer logins, language & currency switchers and live predictive search are supplemented with an expandable and interactive shopping cart.</p>
+						</div>
+						<div class="grid__item size-12 lap--size-20 palm--size-24 push-2 palm--pull-2">
+							<div class="video" data-poster="assets/images/kingdom/kingdom_sidebar_action.jpg" style="padding-top: 64.285%">
+																<video class="lazy-video" autoplay muted playsinline loop>
+																	<source data-src="assets/videos/kingdom/kingdom_sidebar_action.mp4" type="video/mp4" />
+																</video>
+															</div>
+						</div>
+					</div>
+				</div>
+			
+				<div id="featured-split__shop-the-look" class="feature">
+					<div class="grid__item size-10 palm--size-20 push-6 lap--push-2 palm--push-0">
+						<h3 class="animate-in">"Shop the Look"<br />Section</h3>
+					</div>
+					<div class="grid">
+						<div class="grid__item size-12 lap--size-20 palm--size-24 lap--pull-2 palm--pull-2" >
+							<div class="video" data-poster="assets/images/kingdom/kingdom_shop_the_look.jpg" style="padding-top: 65.4285%">
+																<video class="lazy-video" autoplay muted playsinline loop>
+																	<source data-src="assets/videos/kingdom/kingdom_shop_the_look.mp4" type="video/mp4" />
+																</video>
+															</div>
+						</div>
+						<div class="grid__item size-4 lap--size-14 palm--size-20 push-2 lap--push-2 palm--push-0"> 
+							<p class="animate-in">It's super easy to "Shop the Look" with scrollable content in neat, clean, and tidy layouts.</p> 
+						</div>
+					</div>
+				</div>
+			
+			</div></div>
+
+
+			<div id="speed" class="section section--minimal"><section class="speed">
+			
+				<div class="grid__item size-12 lap--size-20 push-7 lap--push-0">
+			
+					<h3 class="speed__title animate-in">Blazing Fast</h3>
+					
+					<div class="grid animate-in lap--show-block">
+						<div class="speed__score size-6 lap--size-16">
+							<span class="speed__index">A</span>(<span class="speed__percent" data-percent="99">99</span>%)
+							<span class="speed__source">Desktop Score</span>
+						</div>
+			
+						<div class="speed__score size-6 lap--size-16 push-2 lap--push-0">
+							<span class="speed__index">A</span>(<span class="speed__percent" data-percent="80">80</span>%)
+							<span class="speed__source">Mobile Score</span>
+						</div>
+					</div>
+			
+					<p class="speed__description animate-in">
+						Slow shopify sites fall behind in rankings. Lightning fast stores race to the top giving higher visibility, more traffic, greater conversions and revenue.
+					</p>
+			
+					<span class="speed__proof animate-in"><a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fking-theme-v2.myshopify.com%2F&tab=desktop" target="_blank">See for yourself <span><svg width="64" height="16" viewBox="0 0 64 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="17" y="7" width="44" height="1.99999" fill="#111111"/><path d="M56.7272 0L64 8L62.6363 9.5L55.3636 1.5L56.7272 0Z" fill="#111111"/><path d="M55.3636 14.5L62.6363 6.5L64 7.99994L56.7272 16L55.3636 14.5Z" fill="#111111"/></svg></span></a></span>
+			
+				</div>
+			
+			</section></div>
+
+			<div id="game" class="section"><div id="line-game"></div></div>
+
+			<div id="generic-features" class="section section--minimal background-color-switch"><div class="generic-features">
+			
+				<div class="grid__item size-17 lap--size-16 palm--size-20 push-7 lap--push-4 palm--push-2">
+			
+					<p class="type-mono animate-in">OTHER THEME FEATURES</p>
+			
+					<div class="grid lap--show-block">
+			
+						<div class="grid__item size-4 lap--size-14 palm--size-20">
+			
+							<div class="feature animate-in">
+								<h4>Optimized for large images</h4>
+								<p>Showcase high-resolution product images across your store without sacrificing load times.</p>
+							</div>
+			
+							<div class="feature animate-in">
+								<h4>Product recommendations</h4>
+								<p>Increase visibility of featured products and showcase recommendations.</p>
+							</div>
+			
+							<div class="feature animate-in">
+								<h4>Free icon pack (260)</h4>
+								<p>Use high-quality icons to display additional content - shopify store details, brand content and specific product information.</p>
+							</div>
+			
+			
+							<div class="feature animate-in">
+								<h4>Customer testimonials</h4>
+								<p>Build trust and credibility by sharing customer comments and quotes.</p>
+							</div>
+			
+						</div>
+			
+						<div class="grid__item size-5 lap--size-14 palm--size-20 push-2 lap--push-0">
+			
+							<div class="feature animate-in">
+								<h4>Language & currency converters</h4>
+								<p>Easily expand into new teritories and markets with the included language and currency conversion tools.</p>
+							</div>
+			
+			
+							<div class="feature animate-in">
+								<h4>Drawer cart (AJAX)</h4>
+								<p>Reduce purchasing friction and increase conversions by allowing purchases from the product page.</p>
+							</div>
+			
+							<div class="grid__item size-8 lap--size-20 palm--size-22 feature-pack">
+								<span class="type-mono animate-in" style="width: calc(100% + 10px)">IT GOES WITHOUT SAYING, YOU'LL ALSO GET</span>
+								<ul>
+									<li class="animate-in"><svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5.41418" y="4.64258" width="10.334" height="2" transform="rotate(45 5.41418 4.64258)" fill="white"/><rect x="23.0854" y="1.41406" width="16" height="2" transform="rotate(135 23.0854 1.41406)" fill="white"/></svg>Customizable content sections</li>
+									<li class="animate-in"><svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5.41418" y="4.64258" width="10.334" height="2" transform="rotate(45 5.41418 4.64258)" fill="white"/><rect x="23.0854" y="1.41406" width="16" height="2" transform="rotate(135 23.0854 1.41406)" fill="white"/></svg>Mobile-friendly design</li>
+									<li class="animate-in"><svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5.41418" y="4.64258" width="10.334" height="2" transform="rotate(45 5.41418 4.64258)" fill="white"/><rect x="23.0854" y="1.41406" width="16" height="2" transform="rotate(135 23.0854 1.41406)" fill="white"/></svg>Search engine optimization</li>
+									<li class="animate-in"><svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5.41418" y="4.64258" width="10.334" height="2" transform="rotate(45 5.41418 4.64258)" fill="white"/><rect x="23.0854" y="1.41406" width="16" height="2" transform="rotate(135 23.0854 1.41406)" fill="white"/></svg>Social media icons</li>
+									<li class="animate-in"><svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5.41418" y="4.64258" width="10.334" height="2" transform="rotate(45 5.41418 4.64258)" fill="white"/><rect x="23.0854" y="1.41406" width="16" height="2" transform="rotate(135 23.0854 1.41406)" fill="white"/></svg>Drop-down navigation support</li>
+									<li class="animate-in"><svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5.41418" y="4.64258" width="10.334" height="2" transform="rotate(45 5.41418 4.64258)" fill="white"/><rect x="23.0854" y="1.41406" width="16" height="2" transform="rotate(135 23.0854 1.41406)" fill="white"/></svg>Built-in styles and color palettes</li>
+									<li class="animate-in"><svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5.41418" y="4.64258" width="10.334" height="2" transform="rotate(45 5.41418 4.64258)" fill="white"/><rect x="23.0854" y="1.41406" width="16" height="2" transform="rotate(135 23.0854 1.41406)" fill="white"/></svg>Free theme updates</li>
+									<li class="animate-in"><svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5.41418" y="4.64258" width="10.334" height="2" transform="rotate(45 5.41418 4.64258)" fill="white"/><rect x="23.0854" y="1.41406" width="16" height="2" transform="rotate(135 23.0854 1.41406)" fill="white"/></svg>Free stock photos by Burst</li>
+								</ul>
+							</div>
+			
+						</div>
+			
+					</div>
+			
+				</div>
+			
+			
+			</div></div>
+
+			<div id="showcase" class="section"><section class="showcase">
+						
+							<div class="group">
+								<h3 class="font-size-large">Theme<br />Showcase</h3>
+							  <a class="more" href="theme-showcase.html">View more</a>
+							</div>
+						
+						  
+    <div id="showcase-0" class="showcase-item" data-index="0">
+      <a class="showcase-item__link page-link parallax" href="https://onticdesign.co" target="_blank" data-parallax="-.1" data-parallax_parent="#showcase-0" data-parallax_offset="top bottom">
+        <div class="showcase-item__content">
+          <figure class="showcase-item__image lazy-load" style="padding-top: 129.166%">
+            <img class="lazyload" src="assets/images/showcase/showcase_3.svg" alt="onticdesign.co" />
+          </figure>
+          <h3 class="showcase-item__title">onticdesign.co</h3>
+        </div>
+      </a>
+    </div>
+
+    <div id="showcase-1" class="showcase-item" data-index="1">
+      <a class="showcase-item__link page-link parallax" href="https://chez-awa.shop" target="_blank" data-parallax="1.5" data-parallax_parent="#showcase-1" data-parallax_offset="top bottom">
+        <div class="showcase-item__content">
+          <figure class="showcase-item__image lazy-load" style="padding-top: 129.166%">
+            <img class="lazyload" src="assets/images/showcase/showcase_6.svg" alt="chez-awa.shop" />
+          </figure>
+          <h3 class="showcase-item__title">chez-awa.shop</h3>
+        </div>
+      </a>
+    </div>
+
+    <div id="showcase-2" class="showcase-item" data-index="2">
+      <a class="showcase-item__link page-link parallax" href="https://tadamasaiguchi.myshopify.com" target="_blank" data-parallax=".5" data-parallax_parent="#showcase-2" data-parallax_offset="top bottom">
+        <div class="showcase-item__content">
+          <figure class="showcase-item__image lazy-load" style="padding-top: 129.166%">
+            <img class="lazyload" src="assets/images/showcase/showcase_8.svg" alt="tadamasaiguchi.myshopify.com" />
+          </figure>
+          <h3 class="showcase-item__title">tadamasaiguchi.myshopify.com</h3>
+        </div>
+      </a>
+    </div>
+						
+						</section></div>
+
+
+			<div id="navigation" class="section"><section class="navigation">
+				<span class="navigation__intro type-mono">NEXT THEME</span>
+				<a id="navigation-link" class="navigation__link page-link" href="highlight.html">
+					<span class="navigation__fill">highlight</span>
+					<span class="navigation__stroke">highlight</span>
+					<div id="navigation-image" class="navigation__image">
+						<div>
+							<div class="navigation__shadow">
+								<img class="navigation__img" 
+									srcset="
+										assets/images/home/krownthemes_highlight_shopify_theme.jpg 1000w,
+										assets/images/home/krownthemes_highlight_shopify_theme_716.jpg 616w,
+										assets/images/home/krownthemes_highlight_shopify_theme_480.jpg 380w" 
+									src="assets/images/home/krownthemes_highlight_shopify_theme_480.jpg" 
+									alt="highlight shopify theme" 
+								/>
+							</div>
+						</div>
+					</div>
+					<div class="navigation__description hide lap--show-block">
+						<span class="title">highlight</span>
+						<span class="description">Showcase noteworthy products in a creative and engaging way<br /><br />$250</span>
+					</div>
+				</a>
+			
+			</section></div>
+
+			<footer id="footer" class="section">
+			  <section class="footer">
+			
+			    <h2 class="font-size-large">Join our<br class="portable--hide" /> newsletter</h2>
+			
+			    <div id="mc_embed_signup" class="newsletter">
+			
+			      <form action="https://krownthemes.us4.list-manage.com/subscribe/post?u=724605feb436b67a5bc437ce1&amp;id=f9c4586d66" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			
+			        <div class="contact__field">
+			          <input type="text" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="" required pattern=".*\S.*">
+			          <label for="mce-EMAIL"><span>Enter your email address here</span></label>
+			          <span class="contact__info">Get our monthly emails to hear about theme updates and other news!</span>
+			        </div>
+			
+			        <button id="mc-embedded-subscribe" type="submit" name="subscribe" class="newsletter__submit" aria-label="Submit"><svg width="64" height="16" viewBox="0 0 64 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="17" y="7" width="44" height="1.99999" fill="#111111"/><path d="M56.7272 0L64 8L62.6363 9.5L55.3636 1.5L56.7272 0Z" fill="#111111"/><path d="M55.3636 14.5L62.6363 6.5L64 7.99994L56.7272 16L55.3636 14.5Z" fill="#111111"/></svg></button>
+			
+			        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_724605feb436b67a5bc437ce1_f9c4586d66" tabindex="-1" value=""></div>
+			
+			      </form>
+			
+			    </div>
+			
+			    <nav class="navigation"> 
+			      <ul>
+  <li><a href="theme-showcase.html"><span>Theme Showcase</span></a></li>
+  <li><a href="https://shopify-support.krownthemes.com/" target="_blank"><span>Themes Documentation</span></a></li>
+  <li><a href="shopify-support-contact.html"><span>Customer Support</span></a></li>
+</ul>
+<ul>
+  <li><a href="about-us.html"><span>About us</span></a></li>
+  <li><a href="blog.html"><span>Blog</span></a></li>
+  <li><a href="contact.html"><span>Contact</span></a></li>
+</ul>
+<ul class="social-links">
+  <li><a href="https://twitter.com/krownthemes" target="_blank"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.625 5.49996L18.5625 5.84371L19.9375 4.12496L17.5312 4.81246C14.4375 1.37496 9.625 5.15621 11 8.24996C5.5 8.24996 2.75 4.12496 2.75 4.12496C2.75 4.12496 0.6875 7.21871 4.125 9.62496L2.0625 8.93746C2.0625 11 3.4375 12.375 5.84375 13.0625H3.4375C4.8125 15.8125 7.21875 15.8125 7.21875 15.8125C7.21875 15.8125 5.15625 17.5312 1.375 17.5312C12.7188 23.0312 19.5938 12.7187 18.5625 7.21871L20.625 5.49996Z" fill="#161616"/></svg><span>Twitter</span></a></li>
+  <li><a href="https://www.facebook.com/krownthemes" target="_blank"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.03451 2.09961H17.976C18.4905 2.09961 18.9 2.50911 18.9 3.02361V17.9756C18.9 18.4796 18.4905 18.8996 17.976 18.8996H13.692V12.3896H15.876L16.2015 9.85911H13.692V8.24211C13.692 7.50711 13.902 7.00311 14.952 7.00311H16.296V4.73511C16.065 4.70361 15.267 4.64061 14.343 4.64061C12.4005 4.64061 11.0775 5.81661 11.0775 7.99011V9.85911H8.88301V12.3896H11.0775V18.8996H3.03451C2.78847 18.8996 2.55235 18.8026 2.3774 18.6296C2.20245 18.4566 2.10277 18.2216 2.10001 17.9756V3.02361C2.10001 2.50911 2.52001 2.09961 3.03451 2.09961Z" fill="#161616"/></svg><span>Facebook</span></a></li>
+</ul>
+			    </nav>
+			
+			  </section>
+			</footer>
+
+		</div>
+
+		<div id="testimonials" class="testimonial-reviews">
+			<section class="testimonial-slider blue">
+
+				<span class="testimonials__title">Positive reviews (163)</span>
+
+				<div class="carousel" id="testimonial-slider__carousel">
+					<div class="carousel-cell">
+					<blockquote>
+						<p>We are extremely satisfied with our choice. The theme is excellent, it has many functions. We needed some adjustments and the support team proved super efficient. When you buy this theme, you not only buy a theme but also a five star service always available! Rated 10+<span class="shadow"></span></p>
+						<footer class="type-mono"><strong>Tehona</strong><time datetime="2020-07-08"><em>Aug 07, 2020</em></time></footer>
+					</blockquote>
+				</div>
+				<div class="carousel-cell">
+					<blockquote>
+						<p>I've been using this them for the past 4 years and really like it. The support I've received from the developers has been nothing but exceptional. They are quick to reply and have been willing to help me with the tweaks I've needed.<span class="shadow"></span></p>
+						<footer class="type-mono"><strong>Lifted Earth Garden Supply Go</strong><time datetime="2020-22-04"><em>Apr 22, 2020</em></time></footer>
+					</blockquote>
+				</div>
+				<div class="carousel-cell">
+					<blockquote>
+						<p>This was the best theme suited to my brand persona - minimal and sharp. Great customer service and so reassuring to know the team are available to help when necessary. All in all, a very happy customer!<span class="shadow"></span></p>
+						<footer class="type-mono"><strong>H. Huna</strong><time datetime="2020-10-02"><em>Feb 20, 2020</em></time></footer>
+					</blockquote>
+				</div>
+				<div class="carousel-cell">
+					<blockquote>
+						<p>This is a wonderfully professional looking theme. It has lots of great features like a mobile friendly design and a slideshow on the home page, which I have found great for showcasing my artwork.<span class="shadow"></span></p>
+						<footer class="type-mono"><strong>Maria Pelton</strong><time datetime="2019-08-10"><em>Oct 08, 2019</em></time></footer>
+					</blockquote>
+				</div>
+				<div class="carousel-cell">
+					<blockquote>
+						<p>We've used this theme for over three years now, and we're as happy with it now as we were the day we bought it. All updates are worthwhile and have made dramatic improvements to the appearance of our site. The support from the team when dealing with any issues has been second to none. We highly recommend this theme!<span class="shadow"></span></p>
+						<footer class="type-mono"><strong>Dreampleasures</strong><time datetime="2018-01-11"><em>Nov 01, 2018</em></time></footer>
+					</blockquote>
+				</div>
+				<div class="carousel-cell">
+					<blockquote>
+						<p>I've really enjoyed working with this theme over the past. The customizability is great, both through the UI and through the support website, which gives further customization options. Furthermore, I have found the tech support to be very helpful and knowledgable.<span class="shadow"></span></p>
+						<footer class="type-mono"><strong>Vincent Roze</strong><time datetime="2017-01-12"><em>Deci 01, 2017</em></time></footer>
+					</blockquote>
+				</div>
+				</div>
+
+			</section>
+
+			<div class="carousel-navigation">
+						
+							<button class="carousel-navigation__button carousel-navigation__previous">
+								<span><svg width="64" height="16" viewBox="0 0 64 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="47" y="9" width="44" height="1.99999" transform="rotate(-180 47 9)" fill="#111111"/><path d="M7.27277 16L3.79535e-05 8L1.36367 6.5L8.6364 14.5L7.27277 16Z" fill="#111111"/><path d="M8.63641 1.5L1.36368 9.5L4.77425e-05 8.00006L7.27278 -2.2155e-07L8.63641 1.5Z" fill="#111111"/></svg></span>
+							</button>
+						
+							<span class="carousel-navigation__position">
+								<span class="carousel-navigation__index">1</span> / 6
+							</span>
+						
+							<button class="carousel-navigation__button carousel-navigation__next">
+								<span><svg width="64" height="16" viewBox="0 0 64 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="17" y="7" width="44" height="1.99999" fill="#111111"/><path d="M56.7272 0L64 8L62.6363 9.5L55.3636 1.5L56.7272 0Z" fill="#111111"/><path d="M55.3636 14.5L62.6363 6.5L64 7.99994L56.7272 16L55.3636 14.5Z" fill="#111111"/></svg></span>
+							</button>
+						
+						</div>
+
+			<span class="testimonials__more"><a href="https://themes.shopify.com/themes/kingdom/styles/king#Reviews" target="_blank"><span class="palm--hide">Read all reviews</span><span class="hide palm--show-block">All reviews</span></a></span>
+
+			<span class="testimonials__close">
+				<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect x="2.12134" width="26" height="3" transform="rotate(45 2.12134 0)" fill="#161616"/>
+					<rect x="20.5061" y="2.12109" width="26" height="3" transform="rotate(135 20.5061 2.12109)" fill="#161616"/>
+				</svg>
+			</span>
+			
+		</div>
+
+	</main>
+
+	<section class="theme-purchase">
+				<div class="theme-purchase-actions">
+					<a id="preview-theme" class="button button--black animate-in-light" href="https://themes.shopify.com/themes/kingdom/styles/king/preview" target="_blank" onclick="return gtag_report_conversion('https://themes.shopify.com/themes/kingdom/styles/king/preview')">
+						<svg width="40" height="35" viewBox="0 0 40 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path style="stroke: none !important;" fill-rule="evenodd" clip-rule="evenodd" d="M19.9999 7.85156C11.3583 7.85156 4.55826 16.3424 4.27493 16.6976C4.02701 17.0174 4.02701 17.5147 4.27493 17.8345C4.55826 18.1897 11.3583 26.6805 19.9999 26.6805C28.6416 26.6805 35.4416 18.1897 35.7249 17.8345C35.9728 17.5147 35.9728 17.0174 35.7249 16.6976C35.4416 16.3424 28.6416 7.85156 19.9999 7.85156ZM19.9999 24.3713C16.1041 24.3713 12.9166 21.1739 12.9166 17.266C12.9166 13.3581 16.1041 10.1608 19.9999 10.1608C23.8958 10.1608 27.0833 13.3581 27.0833 17.266C27.0833 21.1739 23.8958 24.3713 19.9999 24.3713ZM6.18743 17.266C7.21451 16.1292 9.76451 13.5002 13.0937 11.6529C11.8541 13.1805 11.1103 15.1345 11.1103 17.266C11.1103 19.3976 11.8541 21.3516 13.0937 22.8792C9.76451 21.0318 7.21451 18.4029 6.18743 17.266ZM26.9062 22.8792C28.1458 21.3516 28.8895 19.3976 28.8895 17.266C28.8895 15.1345 28.1458 13.1805 26.9062 11.6529C30.2353 13.5002 32.7853 16.1292 33.8124 17.266C32.7853 18.4029 30.2353 21.0318 26.9062 22.8792Z" fill="white"/>
+							<circle style="stroke: none !important;" cx="20" cy="17" r="3" fill="white"/>
+						</svg>
+						View Demo
+					</a>
+					<a id="buy-theme" class="button button--blue animate-in-light" href="https://themes.shopify.com/themes/kingdom/styles/king" target="_blank" onclick="return gtag_report_conversion('https://themes.shopify.com/themes/kingdom/styles/king')">
+						<svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path style="fill: none !important;" d="M6.57058 6.64336H4.49919C3.0296 6.64336 1.81555 7.78963 1.7323 9.25573L1.00454 22.0739C0.914352 23.6625 2.17916 25 3.77143 25H18.2286C19.8208 25 21.0856 23.6625 20.9955 22.0739L20.2677 9.25573C20.1844 7.78962 18.9704 6.64336 17.5008 6.64336H15.4294M6.57058 6.64336H15.4294M6.57058 6.64336V4.69231C6.57058 2.6531 8.22494 1 10.2657 1H11.7343C13.775 1 15.4294 2.6531 15.4294 4.69231V6.64336" stroke="white" stroke-width="1.75"/>
+						</svg>
+						Buy the Theme
+					</a>
+				</div>
+			</section>
+
+
+
+  <div id="scroller"></div>
+  <div id="faux"></div>
+  
+  <script type="text/javascript">
+    if ( 'ontouchstart' in window || window.DocumentTouch && document instanceof DocumentTouch ) {
+      document.querySelector('body').classList.remove('no-touch')
+      document.querySelector('body').classList.add('touch');
+      window.touch = true;
+    } 
+  </script>
+
+  <script type="text/javascript" src="assets/js/main.js"></script>
+
+  
+
+</body>
+
+</html>
